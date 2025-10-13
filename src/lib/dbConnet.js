@@ -1,8 +1,11 @@
 import { MongoClient, ServerApiVersion } from 'mongodb';
+export const collectionNamesObj={
+    ServicesCollection:'EngineExpertsServices',
+    usercollection:'test_user'
+}
 
  export default function dbConnet(collectionName) {
     const uri = process.env.MONGODB_URI
-    console.log(uri)
 // Create a MongoClient with a MongoClientOptions object to set the Stable API version
 const client = new MongoClient(uri, {
   serverApi: {
