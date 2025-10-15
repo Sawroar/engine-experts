@@ -1,7 +1,8 @@
 import { MongoClient, ServerApiVersion } from 'mongodb';
 export const collectionNamesObj={
     ServicesCollection:'EngineExpertsServices',
-    usercollection:'test_user'
+    usercollection:'test_user',
+    bookingCollection:'test_booking'
 }
 
  export default function dbConnet(collectionName) {

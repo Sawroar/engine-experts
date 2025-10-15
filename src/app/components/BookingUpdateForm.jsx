@@ -3,34 +3,32 @@ import { useSession } from "next-auth/react";
 import { useRouter } from "next/navigation";
 import toast from "react-hot-toast";
 
-export default function checkoutForm({ data }) {
-    const router=useRouter()
+export default function BookingUpdateForm({ data }) {
+     const router=useRouter()
     const { data: session } = useSession()
+    console.log('from update form',data.singleBooking)
     const handleSubmit = async(e) => {
         e.preventDefault()
         const form = e.target;
-        const name = form.name.value;
-        const date = form.date.value;
-        const email = form.email.value;
-        const dueAmount = form.due.value;
-        const address = form.address.value;
+          const date = form.date.value;
+          const address = form.address.value;
         const phone = form.phone.value;
           const bookingPayload = {
-            customerName: name,
-            email, date,dueAmount, phone, address,
-            service_id: data?._id,
-            service_name: data?.title,
-            service_img: data?.img,
-            service_price: data?.price
+            // customerName: name,
+            date, phone, address,
+            // service_id: data?.singleBooking?._id,
+            // service_name: data?.singleBooking?.title,
+            // service_img: data?.img,
+            // service_price: data?.price
         }
         toast('Form Submitting...')
         console.log(bookingPayload)
-        const res= await  fetch('http://localhost:3000/api/service',{
-            method:'POST',
+        const res= await  fetch(`http://localhost:3000/api/mybookings/${data?.singleBooking._id}`,{
+            method:'PATCH',
         body:JSON.stringify(bookingPayload)
         })
-        const postedResponse= await res.json()
-        console.log('postedData',postedResponse)
+        const updatedResponse= await res.json()
+        console.log('updated Data',updatedResponse)
         router.push('/mybookings')
 
     }
@@ -49,7 +47,7 @@ export default function checkoutForm({ data }) {
                 <div className='grid-cols-6'>
                     <fieldset className="fieldset">
                         <legend className="fieldset-legend">Date</legend>
-                        <input type="date" className="input" name='date' placeholder="Type here" />
+                        <input type="date" className="input"  defaultValue={data?.singleBooking?.date} name='date' placeholder="Type here" />
                     </fieldset>
                 </div>
             </div>
@@ -63,7 +61,7 @@ export default function checkoutForm({ data }) {
                 <div className='grid-cols-6'>
                     <fieldset className="fieldset">
                         <legend className="fieldset-legend">Due Amount</legend>
-                        <input type="text" className="input" readOnly defaultValue={data?.price} name='due' placeholder="Due Amount" />
+                        <input type="text" className="input" readOnly defaultValue={data?.singleBooking?.dueAmount} name='due' placeholder="Due Amount" />
                     </fieldset>
                 </div>
             </div>
@@ -71,17 +69,17 @@ export default function checkoutForm({ data }) {
                 <div className='grid-cols-6'>
                     <fieldset className="fieldset">
                         <legend className="fieldset-legend">phone</legend>
-                        <input type="text" className="input" name='phone' placeholder="phone" />
+                        <input type="text" className="input" name='phone' defaultValue={data?.singleBooking?.phone} placeholder="phone" />
                     </fieldset>
                 </div>
                 <div className='grid-cols-6'>
                     <fieldset className="fieldset">
                         <legend className="fieldset-legend">Present Address</legend>
-                        <input type="text" className="input" name='address' placeholder="Present Address" />
+                        <input type="text" className="input" name='address' defaultValue={data?.singleBooking?.address} placeholder="Present Address" />
                     </fieldset>
                 </div>
             </div>
-            <button type="submit" className="bg-blue-600 rounded-xl text-xl text-center">Confirm Order</button>
+            <button type="submit" className="bg-blue-600 rounded-xl text-xl text-center">Update Booking</button>
         </form>
     )
 }
