@@ -53,7 +53,7 @@ export default function Navbar() {
             <li onClick={()=>signOut()} className='cursor-pointer mr-3'>Logout</li></>:<li className='mr-3'><Link href={'/register'}>Register</Link></li> }
                 </ol>
 
-          <a className="btn btn-outline rounded-2xl">Appointment</a>
+          <button className='btn rounded border-[#ff3811] text-[#ff3811] hover:bg-[#ff3811] hover:text-white content-center'>Appointment</button>
         </div>
       </div>
     </div>

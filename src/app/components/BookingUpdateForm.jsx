@@ -6,7 +6,8 @@ import toast from "react-hot-toast";
 export default function BookingUpdateForm({ data }) {
      const router=useRouter()
     const { data: session } = useSession()
-    console.log('from update form',data.singleBooking)
+    console.log(data)
+    console.log('from update form',data)
     const handleSubmit = async(e) => {
         e.preventDefault()
         const form = e.target;
@@ -23,7 +24,7 @@ export default function BookingUpdateForm({ data }) {
         }
         toast('Form Submitting...')
         console.log(bookingPayload)
-        const res= await  fetch(`http://localhost:3000/api/mybookings/${data?.singleBooking._id}`,{
+        const res= await  fetch(`http://localhost:3000/api/mybookings/${data?._id}`,{
             method:'PATCH',
         body:JSON.stringify(bookingPayload)
         })
@@ -47,7 +48,7 @@ export default function BookingUpdateForm({ data }) {
                 <div className='grid-cols-6'>
                     <fieldset className="fieldset">
                         <legend className="fieldset-legend">Date</legend>
-                        <input type="date" className="input"  defaultValue={data?.singleBooking?.date} name='date' placeholder="Type here" />
+                        <input type="date" className="input"  defaultValue={data?.date} name='date' placeholder="Type here" />
                     </fieldset>
                 </div>
             </div>
@@ -61,7 +62,7 @@ export default function BookingUpdateForm({ data }) {
                 <div className='grid-cols-6'>
                     <fieldset className="fieldset">
                         <legend className="fieldset-legend">Due Amount</legend>
-                        <input type="text" className="input" readOnly defaultValue={data?.singleBooking?.dueAmount} name='due' placeholder="Due Amount" />
+                        <input type="text" className="input" readOnly defaultValue={data?.dueAmount} name='due' placeholder="Due Amount" />
                     </fieldset>
                 </div>
             </div>
@@ -69,13 +70,13 @@ export default function BookingUpdateForm({ data }) {
                 <div className='grid-cols-6'>
                     <fieldset className="fieldset">
                         <legend className="fieldset-legend">phone</legend>
-                        <input type="text" className="input" name='phone' defaultValue={data?.singleBooking?.phone} placeholder="phone" />
+                        <input type="text" className="input" name='phone' defaultValue={data?.phone} placeholder="phone" />
                     </fieldset>
                 </div>
                 <div className='grid-cols-6'>
                     <fieldset className="fieldset">
                         <legend className="fieldset-legend">Present Address</legend>
-                        <input type="text" className="input" name='address' defaultValue={data?.singleBooking?.address} placeholder="Present Address" />
+                        <input type="text" className="input" name='address' defaultValue={data?.address} placeholder="Present Address" />
                     </fieldset>
                 </div>
             </div>

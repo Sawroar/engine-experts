@@ -14,7 +14,7 @@ export default async function ServiceDetailPage({params}) {
 </section>
 <Image src={data?.img} width={400} height={400} alt={data.title}></Image>
   <Link href={`/checkout/${data._id}`}>
-   <button className="text-white bg-amber-500">Checkout</button>
+   <button className="text-white bg-amber-500 btn">Checkout</button>
   </Link>
  
     {JSON.stringify(data)}
