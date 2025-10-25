@@ -4,7 +4,7 @@ import { SlCallIn } from "react-icons/sl";
 import { ImLocation2 } from "react-icons/im";
 export default function Info() {
     return (
-        <div className='bg-black mx-auto p-4 mt-5'>
+        <div className='bg-black mx-auto p-8 mt-5'>
             <div className='flex gap-10 items-center justify-center'>
 
           
