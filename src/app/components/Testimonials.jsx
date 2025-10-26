@@ -7,7 +7,7 @@ import { MdOutlineStarPurple500 } from 'react-icons/md'
 export default function Testimonials() {
     return (
         <div>
-            <div className='flex justify-center items-center mt-5'>
+            <div className='flex justify-center items-center mt-5 mb-10'>
                 <div>
                     <h1 className='text-center text-[#ff3811] mb-5'> Testimonial</h1>
                     <h1 className='text-5xl text-center font-bold mb-5'>What Customer Says</h1>
