@@ -8,7 +8,7 @@ export default function Info() {
             <div className='flex gap-10 items-center justify-center'>
 
           
-            <div className='flex items-center justify-between gap-8'>
+            <div className='flex flex-col sm:flex-row items-center justify-between gap-8'>
                 <div>
                     <FaRegCalendarAlt className='text-[#ff3811] text-4xl' />
                 </div>
@@ -17,7 +17,7 @@ export default function Info() {
                     <h1 className='text-white text-3xl'>7:00 am - 9:00 pm</h1>
                 </div>
             </div>
-            <div className='flex items-center justify-between gap-8'>
+            <div className='flex  flex-col sm:flex-row  items-center justify-between gap-8'>
                 <div>
                     <SlCallIn className='text-[#ff3811] text-4xl' />
                 </div>
@@ -26,7 +26,7 @@ export default function Info() {
                     <h1 className='text-white text-3xl'>+2546 251 2658</h1>
                 </div>
             </div>
-            <div className='flex items-center justify-between gap-8'>
+            <div className='flex flex-col sm:flex-row   items-center justify-between gap-8'>
                 <div>
                     <ImLocation2 className='text-[#ff3811]  text-4xl' />
                 </div>

@@ -18,10 +18,10 @@ export default function PopularProducts() {
                 </div>
             </div>
          <div className='flex items-center justify-center'>
-               <div className='grid sm:grid-cols-1 md:grid-cols-3 gap-12'>
+               <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-12'>
       <div className=' w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 p-8'>
                     <div className='flex justify-center items-center'>
-                        <Image className='bg-[#F3F3F3] rounded-2xl' src={image1} width={326} height={215} alt='Image-1'></Image>
+                        <Image className='bg-[#F3F3F3] rounded-2xl h-56' src={image1} width={326} height={215} alt='Image-1'></Image>
                     </div>
                     <div className='flex justify-center items-center mt-3'>
                         <div>
@@ -32,13 +32,13 @@ export default function PopularProducts() {
                                 <p className='text-orange-600 text-2xl'><MdOutlineStarPurple500></MdOutlineStarPurple500></p>
                             </div>
                             <h1 className='text-2xl font-bold'>Car Engine Brake</h1>
-                            <p className='text-2xl font-semibold'>$20.00</p>
+                            <p className='text-2xl font-semibold text-[#ff3811] '>$20.00</p>
                         </div>
                     </div>
                 </div>
      <div className='w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 p-8'>
                     <div className='flex justify-center items-center'>
-                        <Image className='bg-[#F3F3F3] rounded-2xl' src={image2} width={326} height={215} alt='Image-1'></Image>
+                        <Image className='bg-[#F3F3F3] rounded-2xl h-56' src={image2} width={326} height={215} alt='Image-1'></Image>
                     </div>
                     <div className='flex justify-center items-center mt-3'>
                         <div>
@@ -49,13 +49,13 @@ export default function PopularProducts() {
                                 <p className='text-orange-600 text-2xl'><MdOutlineStarPurple500></MdOutlineStarPurple500></p>
                             </div>
                             <h1 className='text-3xl font-bold'>Car Suspenstion</h1>
-                            <p className='text-2xl font-semibold'>$20.00</p>
+                            <p className='text-2xl font-semibold text-[#ff3811]'>$20.00</p>
                         </div>
                     </div>
                 </div>
     <div className='w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 p-8'>
                     <div className='flex justify-center items-center'>
-                        <Image className='bg-[#F3F3F3] rounded-2xl object-fill' src={image3} width={326} height={215} alt='Image-1'></Image>
+                        <Image className='bg-[#F3F3F3] rounded-2xl h-56 object-fill' src={image3} width={326} height={215} alt='Image-1'></Image>
                     </div>
                     <div className='flex justify-center items-center mt-3'>
                         <div>
@@ -66,13 +66,13 @@ export default function PopularProducts() {
                                 <p className='text-orange-600 text-2xl'><MdOutlineStarPurple500></MdOutlineStarPurple500></p>
                             </div>
                             <h1 className='text-3xl font-bold'>Car Air Filter</h1>
-                            <p className='text-2xl font-semibold'>$20.00</p>
+                            <p className='text-2xl font-semibold text-[#ff3811]'>$20.00</p>
                         </div>
                     </div>
                 </div>
        <div className='w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 p-8'>
                     <div className='flex justify-center items-center'>
-                        <Image className='bg-[#F3F3F3] rounded-2xl' src={image4} width={326} height={215} alt='Image-1'></Image>
+                        <Image className='bg-[#F3F3F3] rounded-2xl h-56' src={image4} width={326} height={215} alt='Image-1'></Image>
                     </div>
                     <div className='flex justify-center items-center mt-3'>
                         <div>
@@ -83,13 +83,13 @@ export default function PopularProducts() {
                                 <p className='text-orange-600 text-2xl'><MdOutlineStarPurple500></MdOutlineStarPurple500></p>
                             </div>
                             <h1 className='text-3xl font-bold'>Car Battery</h1>
-                            <p className='text-2xl font-semibold'>$20.00</p>
+                            <p className='text-2xl font-semibold text-[#ff3811]'>$20.00</p>
                         </div>
                     </div>
                 </div>
                 <div className='w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 p-8'>
                     <div className='flex justify-center items-center'>
-                        <Image className='bg-[#F3F3F3] rounded-2xl' src={image5} width={326} height={215} alt='Image-1'></Image>
+                        <Image className='bg-[#F3F3F3] rounded-2xl h-56' src={image5} width={326} height={215} alt='Image-1'></Image>
                     </div>
                     <div className='flex justify-center items-center mt-3'>
                         <div>
@@ -100,13 +100,13 @@ export default function PopularProducts() {
                                 <p className='text-orange-600 text-2xl'><MdOutlineStarPurple500></MdOutlineStarPurple500></p>
                             </div>
                             <h1 className='text-3xl font-bold'>Car Tyre</h1>
-                            <p className='text-2xl font-semibold'>$20.00</p>
+                            <p className='text-2xl font-semibold text-[#ff3811]'>$20.00</p>
                         </div>
                     </div>
                 </div>
                 <div className='w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 p-8'>
                     <div className='flex justify-center items-center'>
-                        <Image className='bg-[#F3F3F3] rounded-2xl' src={image6} width={326} height={215} alt='Image-1'></Image>
+                        <Image className='bg-[#F3F3F3] rounded-2xl h-56' src={image6} width={326} height={215} alt='Image-1'></Image>
                     </div>
                     <div className='flex justify-center items-center mt-3'>
                         <div>
@@ -117,13 +117,16 @@ export default function PopularProducts() {
                                 <p className='text-orange-600 text-2xl'><MdOutlineStarPurple500></MdOutlineStarPurple500></p>
                             </div>
                             <h1 className='text-3xl font-bold'>Car Instruments</h1>
-                            <p className='text-2xl font-semibold'>$20.00</p>
+                            <p className='text-2xl font-semibold text-[#ff3811]'>$20.00</p>
                         </div>
                     </div>
                 </div>
 
             </div>
          </div>
+ <div className='flex items-center justify-center mt-5'>
+              <button className='btn rounded border-[#ff3811] text-[#ff3811] hover:bg-[#ff3811] hover:text-white content-center'>More Products</button>
+ </div>
         </div>
     )
 }

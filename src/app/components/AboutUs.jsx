@@ -14,7 +14,7 @@ export default function AboutUs() {
                 </div>
                 </div>
         <div>
-            <h1 className='text-2xl text-orange-600 font-bold'>About Us</h1>
+            <h1 className='text-2xl text-orange-600 font-bold sm:mt-6'>About Us</h1>
             <h1  className='mb-4 text-3xl font-bold'>We are qualified & of experience in this field</h1>
             <p className='mb-4'>There are many variations of passages of Lorem Ipsum available,<br /> but the majority have suffered alteration in some <br /> form,  by injected humour, or randomised words which don't <br /> look even slightly believable. </p>
        <p  className='mb-4'>the majority have suffered alteration in some form, by injected humour, <br /> or randomised words which don't look even slightly believable. </p> 
