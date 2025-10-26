@@ -32,7 +32,7 @@ export default async function ServicesSection() {
                     )
                 })}
             </div>
-              <div className='flex items-center justify-center'>
+              <div className='flex items-center justify-center mt-5'>
                  <button className='btn rounded border-[#ff3811] text-[#ff3811] hover:bg-[#ff3811] hover:text-white content-center'> More Services</button>
               </div>
         </div>
