@@ -19,7 +19,8 @@ export default function PopularProducts() {
             </div>
          <div className='flex items-center justify-center'>
                <div className='grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-12'>
-      <div className=' w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 p-8'>
+      <div className=' w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl p-8 transform transition-all duration-500 ease-in-out 
+                hover:scale-105 hover:-translate-y-2 '>
                     <div className='flex justify-center items-center'>
                         <Image className='bg-[#F3F3F3] rounded-2xl h-56' src={image1} width={326} height={215} alt='Image-1'></Image>
                     </div>
@@ -36,7 +37,7 @@ export default function PopularProducts() {
                         </div>
                     </div>
                 </div>
-     <div className='w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 p-8'>
+     <div className='w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl p-8 hover:scale-105 transform transition-all duration-500 ease-in-out'>
                     <div className='flex justify-center items-center'>
                         <Image className='bg-[#F3F3F3] rounded-2xl h-56' src={image2} width={326} height={215} alt='Image-1'></Image>
                     </div>
@@ -53,7 +54,7 @@ export default function PopularProducts() {
                         </div>
                     </div>
                 </div>
-    <div className='w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 p-8'>
+    <div className='w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl  p-8 hover:scale-105 transform transition-all duration-500 ease-in-out '>
                     <div className='flex justify-center items-center'>
                         <Image className='bg-[#F3F3F3] rounded-2xl h-56 object-fill' src={image3} width={326} height={215} alt='Image-1'></Image>
                     </div>
@@ -70,7 +71,7 @@ export default function PopularProducts() {
                         </div>
                     </div>
                 </div>
-       <div className='w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 p-8'>
+       <div className='w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl p-8 hover:scale-105 transform transition-all duration-500 ease-in-out '>
                     <div className='flex justify-center items-center'>
                         <Image className='bg-[#F3F3F3] rounded-2xl h-56' src={image4} width={326} height={215} alt='Image-1'></Image>
                     </div>
@@ -87,7 +88,7 @@ export default function PopularProducts() {
                         </div>
                     </div>
                 </div>
-                <div className='w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 p-8'>
+                <div className='w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl p-8 hover:scale-105 transform transition-all duration-500 ease-in-out'>
                     <div className='flex justify-center items-center'>
                         <Image className='bg-[#F3F3F3] rounded-2xl h-56' src={image5} width={326} height={215} alt='Image-1'></Image>
                     </div>
@@ -104,7 +105,7 @@ export default function PopularProducts() {
                         </div>
                     </div>
                 </div>
-                <div className='w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 p-8'>
+                <div className='w-88 rounded-lg shadow-md overflow-hidden hover:shadow-xl  p-8 hover:scale-105 transform transition-all duration-500 ease-in-out '>
                     <div className='flex justify-center items-center'>
                         <Image className='bg-[#F3F3F3] rounded-2xl h-56' src={image6} width={326} height={215} alt='Image-1'></Image>
                     </div>

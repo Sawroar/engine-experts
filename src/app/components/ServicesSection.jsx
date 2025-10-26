@@ -12,11 +12,9 @@ export default async function ServicesSection() {
             <p className='text-red-600 text-center font-bold'>Service</p>
             <h1 className='text-center font-bold text-3xl'>Our Service Area</h1>
             <div className='grid grid-cols-12 md:grid-cols-12 sm:grid-cols-1'>
-
-
                 {data.map((item) => {
                     return (
-                        <div key={item._id} className='col-span-12 md:col-span-6 gap-3 lg:col-span-4 p-4 border-gray-950 rounded-2xl h-full '>
+                        <div key={item._id} className='col-span-12 md:col-span-6 w-96 shadow-md overflow-hidden hover:shadow-xl hover:scale-105 transform transition-all duration-500 ease-in-out lg:col-span-4 p-4 border-gray-950 rounded-2xl h-full '>
                             <figure className='w-full h-3/4 flex justify-center items-center'>
                                 <Image className='w-full h-full object-fit rounded ' src={item.img} width={314} height={108} alt={item.title}></Image>
                             </figure>

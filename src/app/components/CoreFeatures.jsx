@@ -17,23 +17,23 @@ export default function CoreFeatures() {
                 </div>
             </div>
             <div className=' flex flex-col sm:flex-row gap-7 justify-center items-center'>
-              <div className='rounded-lg shadow-md overflow-hidden hover:shadow-xl  hover:bg-[#ff3811] hover:text-white transition-shadow duration-300 p-8'>
+              <div className='rounded-lg shadow-md overflow-hidden hover:shadow-xl  transform transition-all duration-500 ease-in-out p-8'>
                   <Image src={image1} height={70} width={100} className='w-48 h-48 ' alt='image-1'></Image>
                   <p className='text-center font-semibold mt-2'>Expert Team</p>
               </div>
-              <div className='rounded-lg shadow-md overflow-hidden hover:shadow-xl  hover:bg-[#ff3811] hover:text-white transition-shadow duration-300 p-8'>
+              <div className='rounded-lg shadow-md overflow-hidden hover:shadow-xl transform transition-all duration-500 ease-in-out p-8'>
                   <Image src={image2} height={70} width={100} className='w-48 h-48 ' alt='image-1'></Image>
                   <p className='text-center font-semibold mt-2'>Timely Delivery</p>
               </div>
-              <div className='rounded-lg shadow-md overflow-hidden hover:shadow-xl  hover:bg-[#ff3811] hover:text-white transition-shadow duration-300 p-8'>
+              <div className='rounded-lg shadow-md overflow-hidden hover:shadow-xl  transform transition-all duration-500 ease-in-out p-8'>
                   <Image src={image3} height={70} width={100} className='w-48 h-48  object-fill' alt='image-1'></Image>
                   <p className='text-center font-semibold mt-2'>24/7 Support</p>
               </div>
-              <div className='rounded-lg shadow-md overflow-hidden hover:shadow-xl  hover:bg-[#ff3811] hover:text-white transition-shadow duration-300 p-8'>
+              <div className='rounded-lg shadow-md overflow-hidden hover:shadow-xl  transform transition-all duration-500 ease-in-out p-8'>
                   <Image src={image4} height={70} width={100} className='w-48 h-48  object-fill' alt='image-1'></Image>
                   <p className='text-center font-semibold mt-2'>100% Guranty</p>
               </div>
-              <div className='rounded-lg shadow-md overflow-hidden hover:shadow-xl  hover:bg-[#ff3811] hover:text-white transition-shadow duration-300 p-8'>
+              <div className='rounded-lg shadow-md overflow-hidden hover:shadow-xl  transform transition-all duration-500 ease-in-out p-8'>
                   <Image src={image5} height={70} width={100} className='w-48 h-48 object-fill' alt='image-1'></Image>
                   <p className='text-center font-semibold mt-2'> Best Equipment</p>
               </div>

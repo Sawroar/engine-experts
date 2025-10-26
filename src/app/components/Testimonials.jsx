@@ -15,7 +15,7 @@ export default function Testimonials() {
                 </div>
             </div>
             <div className='flex justify-around mt-8'>
-                <div className=' rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 p-8'>
+                <div className=' rounded-lg shadow-md overflow-hidden hover:shadow-xl  p-8 hover:scale-105 transform transition-all duration-500 ease-in-out'>
                     <div className='flex justify-between '>
                         <div className='flex gap-4'>
                             <Image src={image1} height={60} width={80} alt='image-1'></Image>
@@ -34,7 +34,7 @@ export default function Testimonials() {
                         <p className='text-[#FF912C] text-2xl'><MdOutlineStarPurple500></MdOutlineStarPurple500></p>
                     </div>
                 </div>
-                <div className=' rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300 p-8'>
+                <div className=' rounded-lg shadow-md overflow-hidden hover:shadow-xl p-8 hover:scale-105 transform transition-all duration-500 ease-in-out'>
                     <div className='flex justify-between'>
                         <div className='flex gap-4'>
                             <Image src={image2} height={60} width={80} alt='image-1'></Image>
