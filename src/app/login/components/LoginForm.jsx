@@ -45,7 +45,7 @@ export default function LoginForm() {
                                 <div><a className="link link-hover">Forgot password?</a></div>
                                 <button type='submit' className="text-white bg-amber-500  hover:bg-[#ff3811] rounded-2xl btn w-full hover:scale-105 transform transition-all duration-500 ease-in-out ">Login</button>
                             </fieldset>
-                            <p className='text-center'>Don't have an account? <Link className='text-[#ff3811]' href={'/register'}>Register Now!</Link> </p>
+                            <p className='text-center'>Don't have an account? <Link className='text-[#ff3811] underline' href={'/register'}>Register Now!</Link> </p>
                         </div>
                     </div>
                 </div>

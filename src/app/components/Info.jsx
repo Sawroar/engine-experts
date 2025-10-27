@@ -5,7 +5,7 @@ import { ImLocation2 } from "react-icons/im";
 export default function Info() {
     return (
         <div className='bg-black mx-auto p-8 mt-5'>
-            <div className='flex gap-10 items-center justify-center'>
+            <div className='flex gap-10 flex-col sm:flex-row items-center justify-center'>
 
           
             <div className='flex flex-col sm:flex-row items-center justify-between gap-8'>

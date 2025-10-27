@@ -21,7 +21,7 @@ export default function SocialLogin() {
   return (
     <div className='flex justify-center gap-3 '>
 <div className='flex justify-around gap-2 items-center bg-amber-300 rounded-full px-4 py-2 cursor-pointer  hover:bg-[#ff3811] hover:scale-105 transform transition-all duration-500 ease-in-out'>
-            <p onClick={()=>handleSocialLogin('google')} className='text-3xl'><FcGoogle /> </p> 
+            <button type='submit' onClick={()=>handleSocialLogin('google')} className='text-3xl'><FcGoogle /> </button> 
             <p className='font-bold'>Log In With Google</p>
 </div>
 <div className='flex justify-around gap-2 items-center bg-amber-300 rounded-full px-4 py-2  cursor-pointer   hover:bg-[#ff3811]  hover:scale-105 transform transition-all duration-500 ease-in-out'>

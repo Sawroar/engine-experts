@@ -30,7 +30,7 @@ export default function RegisterForm() {
                                 <button type='submit' className="text-white bg-amber-500  hover:bg-[#ff3811] rounded-2xl btn w-full hover:scale-105 transform transition-all duration-500 ease-in-out ">Register</button>
                             </fieldset>
                             <SocialLogin></SocialLogin>
-                            <p className='text-center'>Already have an account? <Link className='text-[#ff3811]' href={'/login'}>Log Now!</Link> </p>
+                            <p className='text-center'>Already have an account? <Link className='text-[#ff3811] underline' href={'/login'}>Log Now!</Link> </p>
                         </div>
                     </div>
                 </div>
