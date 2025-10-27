@@ -7,16 +7,11 @@ import { FaEdit } from "react-icons/fa";
 
 export default function MyBookingsTable({ data }) {
   return (
-    <div><div className="overflow-x-auto">
+    <div><div className="overflow-x-auto mt-6 mb-6">
       <table className="table">
         {/* head */}
         <thead>
           <tr>
-            <th>
-              <label>
-                <input type="checkbox" className="checkbox" />
-              </label>
-            </th>
             <th>Service Name</th>
             <th>Due Amount</th>
             <th>Date</th>
@@ -29,12 +24,7 @@ export default function MyBookingsTable({ data }) {
           {data?.result?.map((item) => {
             return (
               <tr key={item?._id}>
-                <th>
-                  <label>
-                    <input type="checkbox" className="checkbox" />
-                  </label>
-                </th>
-                <td>
+                               <td>
                   <div className="flex items-center gap-3">
                     <div className="avatar">
                       <div className="mask mask-squircle h-12 w-12">
@@ -50,14 +40,14 @@ export default function MyBookingsTable({ data }) {
                 <td>
                   {item?.dueAmount}
                   <br />
-                  <span className="badge badge-ghost badge-sm">Desktop Support Technician</span>
+                  <span className="badge badge-ghost badge-sm">Engine Support Technician</span>
                 </td>
                 <td>{item?.date}</td>
                 <th>
-              <Link href={`/mybookings/${item._id}`}>  <button className="btn btn-ghost btn-md"><FaEdit /></button></Link>
+              <Link href={`/mybookings/${item._id}`}>  <button className="btn btn-ghost btn-lg  hover:text-[#2c3aff] rounded-2xl hover:scale-105 transform transition-all duration-500 ease-in-out"><FaEdit /></button></Link>
                 </th>
                 <th>
-               <DeleteBookingButton id={item?._id}></DeleteBookingButton>
+                <button className="btn btn-ghost btn-md  hover:text-[#ff3811] rounded-2xl hover:scale-105 transform transition-all duration-500 ease-in-out"> <DeleteBookingButton  id={item?._id}></DeleteBookingButton></button>
                 </th>
               </tr>
             )
