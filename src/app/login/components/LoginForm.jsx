@@ -3,6 +3,7 @@ import { signIn } from "next-auth/react"
 import toast from 'react-hot-toast';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import SocialLogin from '@/app/components/SocialLogin';
 export default function LoginForm() {
     const router = useRouter()
     const handleSubmit = async (e) => {
@@ -13,7 +14,6 @@ export default function LoginForm() {
         toast('Submiting.....')
         try {
             const response = await signIn("credentials", { email, password, callbackUrl: '/', redirect: false })
-            console.log({ email, password })
             if (response.ok) {
                 toast.success('Logged In Successfully')
                 router.push('/')
@@ -44,6 +44,7 @@ export default function LoginForm() {
                                 <input type="password" name='password' className="input w-full" placeholder="Password" />
                                 <div><a className="link link-hover">Forgot password?</a></div>
                                 <button type='submit' className="text-white bg-amber-500  hover:bg-[#ff3811] rounded-2xl btn w-full hover:scale-105 transform transition-all duration-500 ease-in-out ">Login</button>
+                             <SocialLogin></SocialLogin>
                             </fieldset>
                             <p className='text-center'>Don't have an account? <Link className='text-[#ff3811] underline' href={'/register'}>Register Now!</Link> </p>
                         </div>

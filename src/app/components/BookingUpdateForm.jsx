@@ -22,7 +22,7 @@ export default function BookingUpdateForm({ data }) {
             // service_price: data?.price
         }
         toast('Form Submitting...')
-            const res= await  fetch(`http://localhost:3000/api/mybookings/${data?._id}`,{
+            const res= await  fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/mybookings/${data?._id}`,{
             method:'PATCH',
         body:JSON.stringify(bookingPayload)
         })

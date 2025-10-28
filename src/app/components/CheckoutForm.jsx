@@ -25,14 +25,15 @@ export default function checkoutForm({ data }) {
             service_price: data?.price
         }
         toast('Form Submitting...')
-        console.log(bookingPayload)
-        const res = await fetch('http://localhost:3000/api/service', {
+            const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/service`, {
             method: 'POST',
+            headers:{
+                'Content-Type': 'application/json',
+            },
             body: JSON.stringify(bookingPayload)
         })
         const postedResponse = await res.json()
-        console.log('postedData', postedResponse)
-        router.push('/mybookings')
+            router.push('/mybookings')
 
     }
     return (

@@ -5,7 +5,7 @@ import Image1 from '../../../../public/assets/images/banner/2.jpg'
 import Image2 from '../../../../public/assets/images/Frame.png'
 export default async function ServiceDetailPage({ params }) {
   const p = await params;
-  const res = await fetch(`http://localhost:3000/api/service/${p.id}`)
+  const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/service/${p.id}`)
   const data = await res.json()
   return (
     <div className="container mx-auto mt-4">
@@ -80,7 +80,6 @@ export default async function ServiceDetailPage({ params }) {
           <Image src={Image1} height={500} width={6000} alt="Image-1" className="rounded mt-5"></Image>
         </div>
         <div className="col-span-4">
-          {console.log(data)}
           <div className="bg-[#F3F3F3] px-5 py-3 rounded-2xl">
 
             <h1 className="font-bold text-2xl mb-5">Services</h1>
@@ -144,7 +143,7 @@ export default async function ServiceDetailPage({ params }) {
             </div>
           </div>
           <p className="text-2xl font-bold">Price: ${data?.price}</p>
-          <Link href={`/checkout/${data._id}`}><button className="text-white bg-amber-500  hover:bg-[#ff3811] rounded-2xl btn w-full hover:scale-105 transform transition-all duration-500 ease-in-out ">Proceed Checkout</button> </Link>
+          <Link href={`/checkout/${data?._id}`}><button className="text-white bg-amber-500  hover:bg-[#ff3811] rounded-2xl btn w-full hover:scale-105 transform transition-all duration-500 ease-in-out ">Proceed Checkout</button> </Link>
         </div>
       </section>
     </div>

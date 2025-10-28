@@ -28,7 +28,9 @@ export default function MyBookingsTable({ data }) {
                   <div className="flex items-center gap-3">
                     <div className="avatar">
                       <div className="mask mask-squircle h-12 w-12">
-                  <Image src={item?.service_img} width={50} height={50} alt='service-image'></Image>
+                  <Image src={item?.service_img} width={50} height={50} className="object-cover"
+                            onError={() => handleImageError(item._id)}
+                            onLoad={() => console.log('Image loaded:', item._id)} alt='service-image'></Image>
                       </div>
                     </div>
                     <div>
@@ -47,7 +49,8 @@ export default function MyBookingsTable({ data }) {
               <Link href={`/mybookings/${item._id}`}>  <button className="btn btn-ghost btn-lg  hover:text-[#2c3aff] rounded-2xl hover:scale-105 transform transition-all duration-500 ease-in-out"><FaEdit /></button></Link>
                 </th>
                 <th>
-                <button className="btn btn-ghost btn-md  hover:text-[#ff3811] rounded-2xl hover:scale-105 transform transition-all duration-500 ease-in-out"> <DeleteBookingButton  id={item?._id}></DeleteBookingButton></button>
+                     <DeleteBookingButton  id={item?._id}></DeleteBookingButton>
+              
                 </th>
               </tr>
             )
